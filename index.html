@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>For Alisa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #fdf6f0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      color: #2c2b2b;
+    }
+
+    .letter-wrap {
+      max-width: 620px;
+      width: 100%;
+    }
+
+    .petal-container {
+      position: relative;
+      height: 60px;
+      overflow: hidden;
+      margin-bottom: 0.5rem;
+    }
+
+    .petal {
+      position: absolute;
+      width: 8px;
+      height: 12px;
+      border-radius: 50% 50% 50% 0;
+      opacity: 0;
+      animation: fall linear infinite;
+    }
+
+    @keyframes fall {
+      0%   { transform: translateY(-20px) rotate(0deg); opacity: 0.7; }
+      100% { transform: translateY(80px) rotate(360deg); opacity: 0; }
+    }
+
+    .heart-accent {
+      text-align: center;
+      font-size: 18px;
+      margin-bottom: 1.5rem;
+      color: #c45c82;
+      letter-spacing: 6px;
+    }
+
+    .heading {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      font-weight: 400;
+      color: #2c2b2b;
+      text-align: center;
+      margin: 0 0 0.25rem;
+      letter-spacing: 0.5px;
+    }
+
+    .subhead {
+      text-align: center;
+      font-size: 12px;
+      color: #888;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      margin: 0 0 2rem;
+    }
+
+    .letter-body {
+      background: #ffffff;
+      border: 1px solid #f0e8e8;
+      border-radius: 16px;
+      padding: 2.25rem 2.5rem;
+      line-height: 1.95;
+      font-size: 15px;
+    }
+
+    .letter-body p {
+      margin: 0 0 1.2rem;
+    }
+
+    .letter-body p:last-child {
+      margin-bottom: 0;
+    }
+
+    .italic {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 16px;
+    }
+
+    .sign-off {
+      margin-top: 2rem;
+      text-align: right;
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 17px;
+      color: #2c2b2b;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid #f0e8e8;
+      margin: 1.75rem 0;
+    }
+
+    .song-card {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background: #fdf6f0;
+      border-radius: 10px;
+      padding: 0.85rem 1rem;
+    }
+
+    .song-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      background: #1DB954;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .song-icon svg {
+      width: 22px;
+      height: 22px;
+      fill: white;
+    }
+
+    .song-title {
+      font-size: 14px;
+      font-weight: 400;
+      color: #2c2b2b;
+      margin: 0 0 2px;
+    }
+
+    .song-artist {
+      font-size: 12px;
+      color: #888;
+      margin: 0;
+    }
+
+    @media (max-width: 480px) {
+      .letter-body { padding: 1.5rem 1.25rem; }
+      .heading { font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="letter-wrap">
+    <div class="petal-container" id="petals"></div>
+
+    <div class="heart-accent">♡ ♡ ♡</div>
+    <h1 class="heading">For my Honeybun Alisa</h1>
+    <p class="subhead">One year &amp; counting</p>
+
+    <div class="letter-body">
+      <p class="italic">My dearest Alisa,</p>
+
+      <p>
+        First — I owe you an apology. Our anniversary deserved to be celebrated on the exact day, and I dropped the ball on that. I'm sorry for the delay. You deserve all the celebrations, on time and then some. But here we are, a little late and with a whole lot of love to make up for it.
+      </p>
+
+      <p>
+        One year. It doesn't feel like just a year — it feels like you've already become such a permanent, irreplaceable part of how I see everything. The way I move through days is different because of you. Quieter in the best way. Warmer.
+      </p>
+
+      <p>
+        There's this song I keep coming back to — <span class="italic">I Wanna Be Yours</span> by Arctic Monkeys. Every time it plays, I don't just hear music. I hear something that sounds like the future I imagine with you in it. A life shared. Small mornings and big dreams and all the ordinary in-between moments that become extraordinary because you're there.
+      </p>
+
+      <p>
+        That's what this year has been. And that's what I want more of.
+      </p>
+
+      <p>
+        Happy anniversary, Honeybun. Thank you for being mine, and for letting me be yours.
+      </p>
+
+      <div class="sign-off">
+        With love always,<br>Vrin
+      </div>
+
+      <hr class="divider"/>
+
+      <div class="song-card">
+        <div class="song-icon">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.586 14.424a.623.623 0 01-.857.207c-2.348-1.435-5.304-1.76-8.785-.964a.623.623 0 01-.277-1.215c3.809-.87 7.076-.496 9.712 1.115a.623.623 0 01.207.857zm1.223-2.722a.779.779 0 01-1.072.257c-2.687-1.652-6.785-2.131-9.965-1.166a.779.779 0 01-.973-.516.78.78 0 01.517-.972c3.632-1.102 8.147-.568 11.236 1.325a.779.779 0 01.257 1.072zm.105-2.835c-3.223-1.914-8.54-2.09-11.618-1.156a.935.935 0 11-.543-1.79c3.532-1.072 9.404-.865 13.115 1.338a.935.935 0 01-.954 1.608z"/>
+          </svg>
+        </div>
+        <div>
+          <p class="song-title">I Wanna Be Yours</p>
+          <p class="song-artist">Arctic Monkeys · AM (2013)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const container = document.getElementById('petals');
+    const colors = ['#f9a8c9','#f4c2d8','#e8a0bf','#fbd5e8','#f7b2cc'];
+    for (let i = 0; i < 18; i++) {
+      const p = document.createElement('div');
+      p.className = 'petal';
+      p.style.left = Math.random() * 100 + '%';
+      p.style.background = colors[Math.floor(Math.random() * colors.length)];
+      p.style.animationDuration = (2.5 + Math.random() * 3) + 's';
+      p.style.animationDelay = (Math.random() * 4) + 's';
+      container.appendChild(p);
+    }
+  </script>
+</body>
+</html>
